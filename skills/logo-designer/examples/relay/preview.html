@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Relay — Logo Preview</title>
+<style>
+  :root {
+    --fg: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --light-bg: #ffffff;
+    --dark-bg: #0f172a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    color: var(--fg);
+    background: #f8fafc;
+    padding: 48px 32px;
+    line-height: 1.5;
+  }
+  .page { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 0 0 40px; font-size: 15px; }
+  section.variant {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  section.variant header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 16px;
+  }
+  section.variant h2 { font-size: 18px; margin: 0; text-transform: capitalize; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 13px; text-align: right; }
+  .filename { font-family: ui-monospace, monospace; }
+  .sizes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+    align-items: stretch;
+  }
+  .size-cell {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+    min-height: 140px;
+    position: relative;
+  }
+  .size-cell.light { background: var(--light-bg); }
+  .size-cell.dark { background: var(--dark-bg); border-color: var(--dark-bg); }
+  .size-cell small {
+    position: absolute; bottom: 6px; left: 8px;
+    font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .size-cell.dark small { color: #94a3b8; }
+  .svg-wrap.big svg { width: 240px; height: auto; max-height: 140px; }
+  .svg-wrap.med svg { width: 120px; height: auto; max-height: 80px; }
+  .svg-wrap.small svg { width: 64px; height: auto; max-height: 64px; }
+  .svg-wrap.tiny svg { width: 32px; height: auto; max-height: 32px; }
+  .svg-wrap { display: flex; align-items: center; justify-content: center; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Relay</h1>
+  <p class="tagline">Logo preview — each variant shown on the background it was designed for, at large/medium/tiny sizes.</p>
+  
+        <section class="variant">
+          <header>
+            <h2>relay-primary</h2>
+            <span class="meta">light backgrounds <span class="filename">· relay-primary.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot (suggests data point/system) -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot (suggests data point/system) -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-primary-on-dark</h2>
+            <span class="meta">dark backgrounds <span class="filename">· relay-primary-on-dark.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot (suggests data point/system) -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot (suggests data point/system) -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>dark · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-horizontal</h2>
+            <span class="meta">light backgrounds <span class="filename">· relay-horizontal.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Relay logo horizontal">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1">
+    <text x="130" y="72">Relay</text>
+  </g>
+</svg>
+</div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Relay logo horizontal">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1">
+    <text x="130" y="72">Relay</text>
+  </g>
+</svg>
+</div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-horizontal-on-dark</h2>
+            <span class="meta">dark backgrounds <span class="filename">· relay-horizontal-on-dark.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Relay logo horizontal">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1">
+    <text x="130" y="72">Relay</text>
+  </g>
+</svg>
+</div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Relay logo horizontal">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head (unified) -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1">
+    <text x="130" y="72">Relay</text>
+  </g>
+</svg>
+</div><small>dark · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-stacked</h2>
+            <span class="meta">light backgrounds <span class="filename">· relay-stacked.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 230" role="img" aria-label="Relay logo stacked">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(30, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark centered below -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1" text-anchor="middle">
+    <text x="80" y="200">Relay</text>
+  </g>
+</svg>
+</div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 230" role="img" aria-label="Relay logo stacked">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(30, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark centered below -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1" text-anchor="middle">
+    <text x="80" y="200">Relay</text>
+  </g>
+</svg>
+</div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-stacked-on-dark</h2>
+            <span class="meta">dark backgrounds <span class="filename">· relay-stacked-on-dark.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 230" role="img" aria-label="Relay logo stacked">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(30, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark centered below -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1" text-anchor="middle">
+    <text x="80" y="200">Relay</text>
+  </g>
+</svg>
+</div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 230" role="img" aria-label="Relay logo stacked">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(30, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark centered below -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1" text-anchor="middle">
+    <text x="80" y="200">Relay</text>
+  </g>
+</svg>
+</div><small>dark · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-icon</h2>
+            <span class="meta">light backgrounds + dark backgrounds <span class="filename">· relay-icon.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Relay mark">
+  <!-- Stylized replay arrow / circuit path on a clean square -->
+  <!-- Outer circle path (represents circuit/feedback) -->
+  <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+        fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head -->
+  <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+  <!-- Inner accent dot -->
+  <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+</svg>
+</div><small>light · medium</small></div><div class="size-cell light"><div class="svg-wrap small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Relay mark">
+  <!-- Stylized replay arrow / circuit path on a clean square -->
+  <!-- Outer circle path (represents circuit/feedback) -->
+  <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+        fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head -->
+  <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+  <!-- Inner accent dot -->
+  <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+</svg>
+</div><small>light · small (64px)</small></div><div class="size-cell light"><div class="svg-wrap tiny"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Relay mark">
+  <!-- Stylized replay arrow / circuit path on a clean square -->
+  <!-- Outer circle path (represents circuit/feedback) -->
+  <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+        fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head -->
+  <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+  <!-- Inner accent dot -->
+  <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+</svg>
+</div><small>light · tiny (32px)</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Relay mark">
+  <!-- Stylized replay arrow / circuit path on a clean square -->
+  <!-- Outer circle path (represents circuit/feedback) -->
+  <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+        fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head -->
+  <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+  <!-- Inner accent dot -->
+  <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+</svg>
+</div><small>dark · medium</small></div><div class="size-cell dark"><div class="svg-wrap small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Relay mark">
+  <!-- Stylized replay arrow / circuit path on a clean square -->
+  <!-- Outer circle path (represents circuit/feedback) -->
+  <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+        fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head -->
+  <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+  <!-- Inner accent dot -->
+  <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+</svg>
+</div><small>dark · small (64px)</small></div><div class="size-cell dark"><div class="svg-wrap tiny"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Relay mark">
+  <!-- Stylized replay arrow / circuit path on a clean square -->
+  <!-- Outer circle path (represents circuit/feedback) -->
+  <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+        fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head -->
+  <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+  <!-- Inner accent dot -->
+  <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+</svg>
+</div><small>dark · tiny (32px)</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-mono-black</h2>
+            <span class="meta">light backgrounds <span class="filename">· relay-mono-black.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo monochrome black">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#000000"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#000000"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#000000" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo monochrome black">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#000000"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#000000"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#000000" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>relay-mono-white</h2>
+            <span class="meta">dark backgrounds <span class="filename">· relay-mono-white.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo monochrome white">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#ffffff"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 140" role="img" aria-label="Relay logo monochrome white">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(10, 20)">
+    <!-- Outer circle path -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#ffffff"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark" fill="#ffffff" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="68" letter-spacing="-1.5">
+    <text x="115" y="95">Relay</text>
+  </g>
+</svg>
+</div><small>dark · medium</small></div></div>
+        </section>
+        
+  <footer>Each SVG is rendered at large (240px), medium (120px), and tiny (32px) widths to approximate the
+  scales you'd actually use it at — headers, cards, and favicons. If the tiny rendering is illegible,
+  the logo needs simplification. If a variant disappears on its intended background, it needs a color fix.</footer>
+</div>
+</body>
+</html>

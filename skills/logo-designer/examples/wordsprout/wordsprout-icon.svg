@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg>

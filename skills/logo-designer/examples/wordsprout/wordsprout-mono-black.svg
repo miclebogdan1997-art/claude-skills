@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo monochrome black">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#000" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#1a1a1a" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#000" stroke="none" opacity="0.4"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#000" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#1a1a1a" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#000" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#1a1a1a" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#000" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#1a1a1a" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#000" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#333" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#000" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg>

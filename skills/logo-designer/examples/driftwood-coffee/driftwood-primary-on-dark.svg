@@ -1,0 +1,43 @@
+<svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- Primary emblem + wordmark layout (icon left, wordmark right) -->
+
+  <!-- Icon (emblem) -->
+  <g id="icon">
+    <!-- Outer circle ring -->
+    <circle cx="60" cy="70" r="55" fill="none" stroke="#3d2817" stroke-width="2"/>
+
+    <!-- Inner circle (subtle) -->
+    <circle cx="60" cy="70" r="48" fill="none" stroke="#c2a878" stroke-width="0.5"/>
+
+    <!-- Driftwood leaf/branch motif - stylized leaf shape -->
+    <!-- Main stem -->
+    <path d="M 60 25 Q 58 45, 60 70 Q 62 45, 60 25" fill="none" stroke="#3d2817" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left branch 1 -->
+    <path d="M 60 40 Q 48 38, 42 48" fill="none" stroke="#3d2817" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Right branch 1 -->
+    <path d="M 60 40 Q 72 38, 78 48" fill="none" stroke="#3d2817" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Left branch 2 -->
+    <path d="M 60 55 Q 45 52, 40 62" fill="none" stroke="#3d2817" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Right branch 2 -->
+    <path d="M 60 55 Q 75 52, 80 62" fill="none" stroke="#3d2817" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Left branch 3 -->
+    <path d="M 60 70 Q 48 70, 42 78" fill="none" stroke="#3d2817" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Right branch 3 -->
+    <path d="M 60 70 Q 72 70, 78 78" fill="none" stroke="#3d2817" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g id="wordmark">
+    <!-- "Driftwood" in serif (using web-safe Georgia as primary) -->
+    <text x="125" y="75" font-family="Georgia, serif" font-size="38" font-weight="400" fill="#ffffff" letter-spacing="-1.2">Driftwood</text>
+
+    <!-- "Coffee" in smaller, clean sans -->
+    <text x="125" y="98" font-family="Inter, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#ffffff" letter-spacing="1.5">COFFEE</text>
+  </g>
+</svg>

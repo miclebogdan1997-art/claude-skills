@@ -1,0 +1,1076 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wordsprout — Logo Preview</title>
+<style>
+  :root {
+    --fg: #0f172a;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --light-bg: #ffffff;
+    --dark-bg: #0f172a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    color: var(--fg);
+    background: #f8fafc;
+    padding: 48px 32px;
+    line-height: 1.5;
+  }
+  .page { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .tagline { color: var(--muted); margin: 0 0 40px; font-size: 15px; }
+  section.variant {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  section.variant header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 16px;
+    gap: 16px;
+  }
+  section.variant h2 { font-size: 18px; margin: 0; text-transform: capitalize; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 13px; text-align: right; }
+  .filename { font-family: ui-monospace, monospace; }
+  .sizes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+    align-items: stretch;
+  }
+  .size-cell {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+    min-height: 140px;
+    position: relative;
+  }
+  .size-cell.light { background: var(--light-bg); }
+  .size-cell.dark { background: var(--dark-bg); border-color: var(--dark-bg); }
+  .size-cell small {
+    position: absolute; bottom: 6px; left: 8px;
+    font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .size-cell.dark small { color: #94a3b8; }
+  .svg-wrap.big svg { width: 240px; height: auto; max-height: 140px; }
+  .svg-wrap.med svg { width: 120px; height: auto; max-height: 80px; }
+  .svg-wrap.small svg { width: 64px; height: auto; max-height: 64px; }
+  .svg-wrap.tiny svg { width: 32px; height: auto; max-height: 32px; }
+  .svg-wrap { display: flex; align-items: center; justify-content: center; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Wordsprout</h1>
+  <p class="tagline">Logo preview — each variant shown on the background it was designed for, at large/medium/tiny sizes.</p>
+  
+        <section class="variant">
+          <header>
+            <h2>wordsprout-primary</h2>
+            <span class="meta">light backgrounds <span class="filename">· wordsprout-primary.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#1a1a1a" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#1a1a1a" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-primary-on-dark</h2>
+            <span class="meta">dark backgrounds <span class="filename">· wordsprout-primary-on-dark.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>dark · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-horizontal</h2>
+            <span class="meta">light backgrounds <span class="filename">· wordsprout-horizontal.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Wordsprout logo horizontal">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(5, 12)">
+    <!-- Pot/container base -->
+    <path d="M 20 50 L 24 70 Q 24 78 32 78 L 54 78 Q 62 78 62 70 L 66 50 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="43" cy="50" rx="21.5" ry="5.5" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="43" cy="52" rx="20" ry="4" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 43 50 Q 41.5 35 43 18" stroke="#059669" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="30" cy="40" rx="10" ry="4.3" fill="#10b981" stroke="none" transform="rotate(-45 30 40)"/>
+    <path d="M 30 40 Q 24 35 20 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="56" cy="40" rx="10" ry="4.3" fill="#34d399" stroke="none" transform="rotate(45 56 40)"/>
+    <path d="M 56 40 Q 62 35 66 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="29" cy="28" rx="11.5" ry="5" fill="#10b981" stroke="none" transform="rotate(-50 29 28)"/>
+    <path d="M 29 28 Q 21 23 15 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="57" cy="28" rx="11.5" ry="5" fill="#34d399" stroke="none" transform="rotate(50 57 28)"/>
+    <path d="M 57 28 Q 65 23 71 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="34" cy="15" rx="8.5" ry="4.3" fill="#059669" stroke="none" transform="rotate(-55 34 15)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="52" cy="15" rx="8.5" ry="4.3" fill="#10b981" stroke="none" transform="rotate(55 52 15)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="43" cy="8" r="5" fill="#f97316" stroke="none"/>
+    <circle cx="43" cy="8" r="2.8" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(90, 12)" fill="#1a1a1a" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="0" y="62" font-size="56">Wordsprout</text>
+  </g>
+</svg></div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Wordsprout logo horizontal">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(5, 12)">
+    <!-- Pot/container base -->
+    <path d="M 20 50 L 24 70 Q 24 78 32 78 L 54 78 Q 62 78 62 70 L 66 50 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="43" cy="50" rx="21.5" ry="5.5" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="43" cy="52" rx="20" ry="4" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 43 50 Q 41.5 35 43 18" stroke="#059669" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="30" cy="40" rx="10" ry="4.3" fill="#10b981" stroke="none" transform="rotate(-45 30 40)"/>
+    <path d="M 30 40 Q 24 35 20 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="56" cy="40" rx="10" ry="4.3" fill="#34d399" stroke="none" transform="rotate(45 56 40)"/>
+    <path d="M 56 40 Q 62 35 66 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="29" cy="28" rx="11.5" ry="5" fill="#10b981" stroke="none" transform="rotate(-50 29 28)"/>
+    <path d="M 29 28 Q 21 23 15 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="57" cy="28" rx="11.5" ry="5" fill="#34d399" stroke="none" transform="rotate(50 57 28)"/>
+    <path d="M 57 28 Q 65 23 71 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="34" cy="15" rx="8.5" ry="4.3" fill="#059669" stroke="none" transform="rotate(-55 34 15)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="52" cy="15" rx="8.5" ry="4.3" fill="#10b981" stroke="none" transform="rotate(55 52 15)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="43" cy="8" r="5" fill="#f97316" stroke="none"/>
+    <circle cx="43" cy="8" r="2.8" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(90, 12)" fill="#1a1a1a" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="0" y="62" font-size="56">Wordsprout</text>
+  </g>
+</svg></div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-horizontal-on-dark</h2>
+            <span class="meta">dark backgrounds <span class="filename">· wordsprout-horizontal-on-dark.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Wordsprout logo horizontal">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(5, 12)">
+    <!-- Pot/container base -->
+    <path d="M 20 50 L 24 70 Q 24 78 32 78 L 54 78 Q 62 78 62 70 L 66 50 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="43" cy="50" rx="21.5" ry="5.5" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="43" cy="52" rx="20" ry="4" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 43 50 Q 41.5 35 43 18" stroke="#059669" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="30" cy="40" rx="10" ry="4.3" fill="#10b981" stroke="none" transform="rotate(-45 30 40)"/>
+    <path d="M 30 40 Q 24 35 20 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="56" cy="40" rx="10" ry="4.3" fill="#34d399" stroke="none" transform="rotate(45 56 40)"/>
+    <path d="M 56 40 Q 62 35 66 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="29" cy="28" rx="11.5" ry="5" fill="#10b981" stroke="none" transform="rotate(-50 29 28)"/>
+    <path d="M 29 28 Q 21 23 15 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="57" cy="28" rx="11.5" ry="5" fill="#34d399" stroke="none" transform="rotate(50 57 28)"/>
+    <path d="M 57 28 Q 65 23 71 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="34" cy="15" rx="8.5" ry="4.3" fill="#059669" stroke="none" transform="rotate(-55 34 15)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="52" cy="15" rx="8.5" ry="4.3" fill="#10b981" stroke="none" transform="rotate(55 52 15)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="43" cy="8" r="5" fill="#f97316" stroke="none"/>
+    <circle cx="43" cy="8" r="2.8" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(90, 12)" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="0" y="62" font-size="56">Wordsprout</text>
+  </g>
+</svg></div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" role="img" aria-label="Wordsprout logo horizontal">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(5, 12)">
+    <!-- Pot/container base -->
+    <path d="M 20 50 L 24 70 Q 24 78 32 78 L 54 78 Q 62 78 62 70 L 66 50 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="43" cy="50" rx="21.5" ry="5.5" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="43" cy="52" rx="20" ry="4" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 43 50 Q 41.5 35 43 18" stroke="#059669" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="30" cy="40" rx="10" ry="4.3" fill="#10b981" stroke="none" transform="rotate(-45 30 40)"/>
+    <path d="M 30 40 Q 24 35 20 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="56" cy="40" rx="10" ry="4.3" fill="#34d399" stroke="none" transform="rotate(45 56 40)"/>
+    <path d="M 56 40 Q 62 35 66 32" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="29" cy="28" rx="11.5" ry="5" fill="#10b981" stroke="none" transform="rotate(-50 29 28)"/>
+    <path d="M 29 28 Q 21 23 15 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="57" cy="28" rx="11.5" ry="5" fill="#34d399" stroke="none" transform="rotate(50 57 28)"/>
+    <path d="M 57 28 Q 65 23 71 20" stroke="#059669" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="34" cy="15" rx="8.5" ry="4.3" fill="#059669" stroke="none" transform="rotate(-55 34 15)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="52" cy="15" rx="8.5" ry="4.3" fill="#10b981" stroke="none" transform="rotate(55 52 15)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="43" cy="8" r="5" fill="#f97316" stroke="none"/>
+    <circle cx="43" cy="8" r="2.8" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(90, 12)" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="0" y="62" font-size="56">Wordsprout</text>
+  </g>
+</svg></div><small>dark · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-stacked</h2>
+            <span class="meta">light backgrounds <span class="filename">· wordsprout-stacked.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Wordsprout logo stacked">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(85.0, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group - centered below icon -->
+  <g id="wordmark" transform="translate(75.0, 120)" fill="#1a1a1a" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="65" y="45" font-size="32" text-anchor="middle">Wordsprout</text>
+  </g>
+</svg></div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Wordsprout logo stacked">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(85.0, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group - centered below icon -->
+  <g id="wordmark" transform="translate(75.0, 120)" fill="#1a1a1a" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="65" y="45" font-size="32" text-anchor="middle">Wordsprout</text>
+  </g>
+</svg></div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-stacked-on-dark</h2>
+            <span class="meta">dark backgrounds <span class="filename">· wordsprout-stacked-on-dark.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Wordsprout logo stacked">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(85.0, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group - centered below icon -->
+  <g id="wordmark" transform="translate(75.0, 120)" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="65" y="45" font-size="32" text-anchor="middle">Wordsprout</text>
+  </g>
+</svg></div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" role="img" aria-label="Wordsprout logo stacked">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(85.0, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group - centered below icon -->
+  <g id="wordmark" transform="translate(75.0, 120)" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-0.5">
+    <text x="65" y="45" font-size="32" text-anchor="middle">Wordsprout</text>
+  </g>
+</svg></div><small>dark · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-icon</h2>
+            <span class="meta">light backgrounds + dark backgrounds <span class="filename">· wordsprout-icon.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg></div><small>light · medium</small></div><div class="size-cell light"><div class="svg-wrap small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg></div><small>light · small (64px)</small></div><div class="size-cell light"><div class="svg-wrap tiny"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg></div><small>light · tiny (32px)</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg></div><small>dark · medium</small></div><div class="size-cell dark"><div class="svg-wrap small"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg></div><small>dark · small (64px)</small></div><div class="size-cell dark"><div class="svg-wrap tiny"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Wordsprout icon">
+  <!-- Pot/container base -->
+  <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#f97316" stroke="none"/>
+  <ellipse cx="60" cy="70" rx="30" ry="8" fill="#fb923c" stroke="none"/>
+
+  <!-- Soil in pot -->
+  <ellipse cx="60" cy="72" rx="28" ry="6" fill="#92400e" stroke="none" opacity="0.3"/>
+
+  <!-- Main stem -->
+  <path d="M 60 70 Q 58 50 60 25" stroke="#059669" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Left leaf 1 (lower) -->
+  <ellipse cx="42" cy="55" rx="14" ry="6" fill="#10b981" stroke="none" transform="rotate(-45 42 55)"/>
+  <path d="M 42 55 Q 35 48 30 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 1 (lower) -->
+  <ellipse cx="78" cy="55" rx="14" ry="6" fill="#34d399" stroke="none" transform="rotate(45 78 55)"/>
+  <path d="M 78 55 Q 85 48 90 45" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 2 (middle) -->
+  <ellipse cx="40" cy="38" rx="16" ry="7" fill="#10b981" stroke="none" transform="rotate(-50 40 38)"/>
+  <path d="M 40 38 Q 30 32 22 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Right leaf 2 (middle) -->
+  <ellipse cx="80" cy="38" rx="16" ry="7" fill="#34d399" stroke="none" transform="rotate(50 80 38)"/>
+  <path d="M 80 38 Q 90 32 98 28" stroke="#059669" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Left leaf 3 (upper) -->
+  <ellipse cx="48" cy="20" rx="12" ry="6" fill="#059669" stroke="none" transform="rotate(-55 48 20)"/>
+
+  <!-- Right leaf 3 (upper) -->
+  <ellipse cx="72" cy="20" rx="12" ry="6" fill="#10b981" stroke="none" transform="rotate(55 72 20)"/>
+
+  <!-- Top sprout/growth point -->
+  <circle cx="60" cy="12" r="7" fill="#f97316" stroke="none"/>
+  <circle cx="60" cy="12" r="4" fill="#fbbf24" stroke="none" opacity="0.8"/>
+</svg></div><small>dark · tiny (32px)</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-mono-black</h2>
+            <span class="meta">light backgrounds <span class="filename">· wordsprout-mono-black.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell light"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo monochrome black">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#000" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#1a1a1a" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#000" stroke="none" opacity="0.4"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#000" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#1a1a1a" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#000" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#1a1a1a" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#000" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#1a1a1a" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#000" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#333" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#000" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>light · large</small></div><div class="size-cell light"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo monochrome black">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#000" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#1a1a1a" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#000" stroke="none" opacity="0.4"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#000" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#1a1a1a" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#000" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#1a1a1a" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#000" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#000" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#1a1a1a" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#000" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#333" stroke="none" opacity="0.8"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#000" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>light · medium</small></div></div>
+        </section>
+        
+        <section class="variant">
+          <header>
+            <h2>wordsprout-mono-white</h2>
+            <span class="meta">dark backgrounds <span class="filename">· wordsprout-mono-white.svg</span></span>
+          </header>
+          <div class="sizes"><div class="size-cell dark"><div class="svg-wrap big"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo monochrome white">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#fff" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#f0f0f0" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#fff" stroke="none" opacity="0.5"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#fff" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#f0f0f0" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#fff" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#f0f0f0" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#fff" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#f0f0f0" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#fff" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#e5e5e5" stroke="none" opacity="0.9"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#fff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>dark · large</small></div><div class="size-cell dark"><div class="svg-wrap med"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 140" role="img" aria-label="Wordsprout logo monochrome white">
+  <!-- Icon group: stylized sprout with leaves -->
+  <g id="icon" transform="translate(10, 10)">
+    <!-- Pot/container base -->
+    <path d="M 30 70 L 35 95 Q 35 105 45 105 L 75 105 Q 85 105 85 95 L 90 70 Z" fill="#fff" stroke="none"/>
+    <ellipse cx="60" cy="70" rx="30" ry="8" fill="#f0f0f0" stroke="none"/>
+
+    <!-- Soil in pot -->
+    <ellipse cx="60" cy="72" rx="28" ry="6" fill="#fff" stroke="none" opacity="0.5"/>
+
+    <!-- Main stem -->
+    <path d="M 60 70 Q 58 50 60 25" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Left leaf 1 (lower) -->
+    <ellipse cx="42" cy="55" rx="14" ry="6" fill="#fff" stroke="none" transform="rotate(-45 42 55)"/>
+    <path d="M 42 55 Q 35 48 30 45" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Right leaf 1 (lower) -->
+    <ellipse cx="78" cy="55" rx="14" ry="6" fill="#f0f0f0" stroke="none" transform="rotate(45 78 55)"/>
+    <path d="M 78 55 Q 85 48 90 45" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Left leaf 2 (middle) -->
+    <ellipse cx="40" cy="38" rx="16" ry="7" fill="#fff" stroke="none" transform="rotate(-50 40 38)"/>
+    <path d="M 40 38 Q 30 32 22 28" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Right leaf 2 (middle) -->
+    <ellipse cx="80" cy="38" rx="16" ry="7" fill="#f0f0f0" stroke="none" transform="rotate(50 80 38)"/>
+    <path d="M 80 38 Q 90 32 98 28" stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Left leaf 3 (upper) -->
+    <ellipse cx="48" cy="20" rx="12" ry="6" fill="#fff" stroke="none" transform="rotate(-55 48 20)"/>
+
+    <!-- Right leaf 3 (upper) -->
+    <ellipse cx="72" cy="20" rx="12" ry="6" fill="#f0f0f0" stroke="none" transform="rotate(55 72 20)"/>
+
+    <!-- Top sprout/growth point -->
+    <circle cx="60" cy="12" r="7" fill="#fff" stroke="none"/>
+    <circle cx="60" cy="12" r="4" fill="#e5e5e5" stroke="none" opacity="0.9"/>
+  </g>
+
+  <!-- Wordmark group -->
+  <g id="wordmark" transform="translate(130, 15)" fill="#fff" font-family="Inter, system-ui, -apple-system, sans-serif" font-weight="700" letter-spacing="-1">
+    <text x="0" y="85" font-size="72">Wordsprout</text>
+  </g>
+</svg></div><small>dark · medium</small></div></div>
+        </section>
+        
+  <footer>Each SVG is rendered at large (240px), medium (120px), and tiny (32px) widths to approximate the
+  scales you'd actually use it at — headers, cards, and favicons. If the tiny rendering is illegible,
+  the logo needs simplification. If a variant disappears on its intended background, it needs a color fix.</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 230" role="img" aria-label="Relay logo stacked">
+  <!-- Icon: stylized replay arrow / circuit path -->
+  <g id="icon" transform="translate(30, 10)">
+    <!-- Outer circle path (represents circuit/feedback) -->
+    <path d="M 40 80 Q 20 60, 20 40 Q 20 15, 45 10 Q 70 5, 80 20 L 90 10 L 85 35 L 60 30 Q 50 28, 50 40 Q 50 52, 65 65"
+          fill="none" stroke="#0066cc" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Arrow head -->
+    <path d="M 90 10 L 85 35 L 60 30 Z" fill="#0066cc"/>
+    <!-- Inner accent dot -->
+    <circle cx="50" cy="45" r="3.5" fill="#0066cc"/>
+  </g>
+
+  <!-- Wordmark centered below -->
+  <g id="wordmark" fill="#0f172a" font-family="Inter, -apple-system, sans-serif" font-weight="700" font-size="56" letter-spacing="-1" text-anchor="middle">
+    <text x="80" y="200">Relay</text>
+  </g>
+</svg>

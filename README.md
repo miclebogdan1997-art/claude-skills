@@ -12,6 +12,8 @@ Designs a complete logo identity for a company or brand: icon, wordmark, and all
 
 Covers the full stylistic range — modern, minimalist, vintage, playful, corporate, luxury, geometric, hand-drawn, tech, editorial, and more. Includes a validator script that catches the most common failure mode in AI-generated SVG logos (text overflowing the viewBox) before the files are shipped.
 
+See [skills/logo-designer/examples](skills/logo-designer/examples) for sample outputs from three real briefs (a specialty coffee roaster, a B2B dev tool, and a kids' reading app).
+
 ## Installing a skill
 
 Each skill lives in its own folder under `skills/`. To use one:
