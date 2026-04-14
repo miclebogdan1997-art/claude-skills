@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Skill workspace artifacts (eval runs, generated outputs)
+*-workspace/
+/outputs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Skill packages (rebuild from source)
+*.skill
