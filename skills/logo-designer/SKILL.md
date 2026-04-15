@@ -38,9 +38,21 @@ Before generating SVG, pick a concept deliberately. Write a short (3-6 line) des
 
 Don't over-elaborate. A clear concept stated in one sentence is worth more than three paragraphs of flowery description.
 
-### Phase 3: Generate the SVG
+### Phase 3: Assess shape complexity
 
-Hand-author the SVG. Don't use AI image generators for this — the skill is built around vector code because vectors are what real brands ship.
+Before writing any SVG, classify the icon you're about to create. This step prevents the most painful failure mode: spending 15 iterations trying to hand-code a realistic eagle that keeps looking like a duck.
+
+Read `references/complex-shapes.md` for the full framework. The short version:
+
+- **Tier 1-2** (geometric shapes, composed primitives, simple shields/arrows): Hand-code directly as SVG. This is fast and reliable.
+- **Tier 3** (stylized organic — abstract wings, leaf shapes, flame forms): Use **Python parametric generation**. Write a script with named parameters (`WING_SPREAD=40`, `BODY_WIDTH=12`) that generates all SVG variants at once. This lets you iterate by changing numbers instead of hunting through path coordinates. Use `scripts/parametric_logo_gen.py` as a starting template.
+- **Tier 4** (detailed realistic animals/figures): **Don't attempt this.** Redirect toward Tier 3 abstraction. Explain to the user that iconic logos (Twitter bird, Apple apple, WWF panda) succeed *because* they're simplified, not despite it.
+
+**If the icon involves any animal, bird, plant, human figure, or other organic form**, default to Tier 3 + Python generation even if it seems simple. Even a "simple leaf" is much easier to get right parametrically than by hand-coding SVG path coordinates.
+
+### Phase 3b: Generate the SVG
+
+Hand-author the SVG (for Tier 1-2 icons) or run your Python generator (for Tier 3). Don't use AI image generators — the skill is built around vector code because vectors are what real brands ship.
 
 Key technical rules for the primary SVG:
 
@@ -145,7 +157,8 @@ Not every request needs the full six-phase treatment. If the user says "just thr
 
 - `references/archetypes.md` — Logo archetypes (wordmark, lettermark, etc.) and when each works.
 - `references/svg-patterns.md` — Starter SVG patterns for common logo types (monograms, geometric marks, abstract symbols).
+- `references/complex-shapes.md` — **Read this when the icon involves any organic/figurative form** (animals, birds, plants, people). Covers complexity tiers, the Python parametric generation pattern, abstraction principles, minimum-recognizable-features table, and a diagnostic chart for common failures ("looks like a duck" → fix X).
 - `references/color-theory.md` — Quick reference for color psychology and palette construction.
 - `references/design-principles.md` — Extended notes on timeless logo design.
 
-Read them when you need specific guidance — you don't need to read them all every time.
+Read them when you need specific guidance — you don't need to read them all every time. The one exception: **always** read `complex-shapes.md` before attempting any organic/figurative icon. Skipping it is the #1 cause of painful multi-iteration logo sessions.
