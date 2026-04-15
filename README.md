@@ -14,6 +14,14 @@ Covers the full stylistic range — modern, minimalist, vintage, playful, corpor
 
 See [skills/logo-designer/examples](skills/logo-designer/examples) for sample outputs from three real briefs (a specialty coffee roaster, a B2B dev tool, and a kids' reading app).
 
+### [project-docs](skills/project-docs)
+
+Bootstraps and maintains a structured, agent-first documentation set for any software project. Generates a `CLAUDE.md` conventions hub, Architecture Decision Records (ADRs), reference catalogs (endpoints, entities, components, state), flow docs with ASCII sequence diagrams, a per-change CHANGELOG, and a code-vs-docs DISCREPANCIES tracker.
+
+The format is optimized for how LLMs consume text: dense tables over prose, ASCII over Mermaid, single source of truth per fact, and explicit tracking of known gaps. Docs are updated in the same PR as the code change, with periodic sync passes as a safety net. The result is persistent context that survives between agent sessions — session 1 builds the docs, session 50 benefits from 49 sessions of accumulated structured knowledge.
+
+Includes 5 reference guides (ADR writing, flow doc conventions, catalog formats, conventions hub structure, sync workflow) and 7 drop-in templates. Stack-agnostic — works for backend, frontend, CLIs, libraries, and monorepos.
+
 ## Installing a skill
 
 Each skill lives in its own folder under `skills/`. To use one:
@@ -22,25 +30,4 @@ Each skill lives in its own folder under `skills/`. To use one:
 
 **In Claude Code**, copy the skill folder into `~/.claude/skills/` (or your project's `.claude/skills/` for project-scoped skills). Restart Claude Code and the skill will be available.
 
-**As a plugin bundle**, you can also package multiple skills together as a `.plugin` for easier distribution — see the [Claude Code plugin docs](https://docs.claude.com/en/docs/claude-code).
-
-## Repo structure
-
-```
-skills/
-  <skill-name>/
-    SKILL.md          # The skill itself (YAML frontmatter + instructions)
-    references/       # Reference docs loaded on demand
-    scripts/          # Helper scripts the skill can run
-    assets/           # Templates, fonts, icons used in outputs
-```
-
-Every skill has a `SKILL.md` at its root with YAML frontmatter declaring the `name` and `description`. The description is what Claude uses to decide whether to invoke the skill, so it should be specific about when to trigger.
-
-## Contributing
-
-If you want to add a skill, open a PR with a new folder under `skills/`. Keep the SKILL.md under ~500 lines; put longer docs in `references/` and only load them when needed (progressive disclosure — this keeps Claude's working context lean).
-
-## License
-
-[MIT](LICENSE) — free to use, modify, redistribute.
+**As
